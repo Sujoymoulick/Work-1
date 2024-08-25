@@ -5,14 +5,23 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>html form</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
-    <h1>Forms</h1>
+    <h1 class="ssb1">Forms</h1>
+
+    <div class="marquee-container">
+        <marquee class="marquee">
+            <p>This is my first form using HTML</p>
+        </marquee>
+    </div>
+
     <form action="backend.php">
-        <label for="name">Name</label>
+        <!-- <label for="name">Name</label> -->
+        <br>
         <div>
-            <input type="text" name="My Name" id="name">
+            Name: <input type="text" name="My Name">
         </div>
         <br>
         <div>
@@ -31,35 +40,36 @@
             Date: <input type="date" name="my date">
         </div>
         <br>
-        <label for="eligible">Are you eligible?:</label>
+        <label for="eligible" class="ssb4">Are you eligible?:</label>
         <input type="checkbox" name="my eligibality" id="eligible" checked>
         <br>
         <br>
-        <div>
-            <label for="car">Car</label>
-            <select name="my car" id="car">
-                <option value="tata">tata nano</option>
-                <option value="swift">swift</option>
-                <option value="tvs">tvs</option>
-                <option value="honda" selected>honda</option>
+        <div class="ssb3">
+            <label for="language">language</label>
+            <select name="my language" id="language">
+                <option value="sujoy1">English</option>
+                <option value="sujoy2" selected>Bengali</option>
+                <option value="sujoy3">Hindi</option>
+                <option value="sujoy4">Rajasthani</option>
             </select>
         </div>
         <br>
-        <div>
+        <div class="ssb3">
             Gender:
             Male <input type="radio" name="mygender">
             Female<input type="radio" name="mygender">
             Others<input type="radio" name="mygender">
         </div>
         <br>
-        <div>
-            Write about yourself: <br><textarea name="mytext" cols="70" rows="10"></textarea>
+        <div class="ssb3">
+            Write about yourself: <br><br><textarea name="mytext" cols="70" rows="10" class="ssb2"></textarea>
         </div>
         <br>
-        <div>
+        <div class="ssb5">
             <input type="submit" value="Submit">
             <input type="reset" value="Reset Now">
         </div>
+        <br>
     </form>
 </body>
 

@@ -1,0 +1,87 @@
+h1.ssb1 {
+  color: rgb(177, 229, 5);
+  border: 2px;
+  text-align: center;
+}
+form {
+  text-align: center;
+  border: 4px solid black;
+  border-radius: 23px;
+  margin: auto;
+}
+body {
+  padding: 0;
+  margin: 0;
+  height: 100%;
+  background-image: url("https://phlearn.com/wp-content/uploads/2018/03/How-to-Create-a-Cinematic-Look-in-Photoshop-After.jpg");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: 100% 100%;
+}
+.ssb2 {
+  background-color: transparent;
+  border: 5px solid goldenrod;
+  border-radius: 23px;
+  color: #48ec11;
+  font-size: larger;
+}
+.ssb3 {
+  color: rgb(230, 243, 5);
+  font-family: "Times New Roman", Times, serif;
+  font-size: larger;
+}
+.ssb4 {
+  color: yellow;
+}
+
+/* this is for input  tag in  form  */
+
+input[type="submit"],
+input[type="reset"] {
+  color: rgb(92, 226, 25);
+  background-color: rgb(57, 3, 3);
+}
+
+input[type="text"],
+input[type="number"],
+input[type="date"] {
+  background-color: transparent;
+}
+select {
+  background-color: transparent;
+}
+
+/* Container to hold the scrolling text */
+.marquee-container {
+  width: 100%; /* Full width */
+  overflow: hidden; /* Hide overflow */
+  white-space: nowrap; /* Prevent line breaks */
+  background-color: #ec7011; /* Background color */
+  border: 3px solid #030303; /* Optional border */
+}
+
+/* Scrolling text style */
+.marquee {
+  display: inline-block;
+  padding-left: 100%; /* Start the text off-screen */
+  animation: marquee 18s linear infinite; /* Apply animation */
+  font-size: larger;
+}
+
+/* Keyframes for scrolling animation */
+@keyframes marquee {
+  from {
+    transform: translateX(100%); /* Start from right */
+  }
+  to {
+    transform: translateX(-100%); /* End at left */
+  }
+}
+
+/* Optional styling for the text */
+.marquee p {
+  margin: 0; /* Remove default margin */
+  padding: 10px; /* Add padding */
+  font-size: 16px; /* Font size */
+  color: #150707; /* Text color */
+}
