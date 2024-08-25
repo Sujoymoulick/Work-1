@@ -85,3 +85,8 @@ select {
   font-size: 16px; /* Font size */
   color: #150707; /* Text color */
 }
+textarea {
+  width: 100%;
+  max-width: 100%; /* Ensure it doesn't exceed the container's width */
+  box-sizing: border-box; /* Include padding and border in the element's total width and height */
+}
