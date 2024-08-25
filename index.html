@@ -4,34 +4,63 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Home page</title>
+    <title>html form</title>
 </head>
 
-
-
-<style>
-    div {
-        background-color: blueviolet;
-    }
-
-    p {
-        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-        color: black;
-    }
-</style>
-
-
-
 <body>
-    <div>
-        <h1><em>My first repository</em></h1>
-    </div>
-    <div>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem dignissimos saepe ipsum temporibus
-            explicabo dolore. Nemo deleniti sint similique odit quo minima dolorem ipsa delectus expedita, fuga
-            recusandae libero omnis, aspernatur quis repellendus? Doloremque, provident.
-        </p>
-    </div>
+    <h1>Forms</h1>
+    <form action="backend.php">
+        <label for="name">Name</label>
+        <div>
+            <input type="text" name="My Name" id="name">
+        </div>
+        <br>
+        <div>
+            Role: <input type="number" name="My Role">
+        </div>
+        <br>
+        <div>
+            Class: <input type="text" name="My Class">
+        </div>
+        <br>
+        <div>
+            Email: <input type="text" name="My Email">
+        </div>
+        <br>
+        <div>
+            Date: <input type="date" name="my date">
+        </div>
+        <br>
+        <label for="eligible">Are you eligible?:</label>
+        <input type="checkbox" name="my eligibality" id="eligible" checked>
+        <br>
+        <br>
+        <div>
+            <label for="car">Car</label>
+            <select name="my car" id="car">
+                <option value="tata">tata nano</option>
+                <option value="swift">swift</option>
+                <option value="tvs">tvs</option>
+                <option value="honda" selected>honda</option>
+            </select>
+        </div>
+        <br>
+        <div>
+            Gender:
+            Male <input type="radio" name="mygender">
+            Female<input type="radio" name="mygender">
+            Others<input type="radio" name="mygender">
+        </div>
+        <br>
+        <div>
+            Write about yourself: <br><textarea name="mytext" cols="70" rows="10"></textarea>
+        </div>
+        <br>
+        <div>
+            <input type="submit" value="Submit">
+            <input type="reset" value="Reset Now">
+        </div>
+    </form>
 </body>
 
 </html>
